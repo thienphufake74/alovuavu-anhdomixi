@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sách học: Câu chủ động và bị động</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#eef2f6;--card:#fff;--ink:#14213d;--mute:#51607a;--line:#cfd8e3;--s:#0e7c86;--v:#b4540a;--o:#5b3fa6;--hl:#ffd166;--ok:#1b7f4b;--bad:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--card:#18223a;--ink:#e8eef9;--mute:#9db0cf;--line:#2b3957;--s:#4fd0d9;--v:#ffa45c;--o:#b79cff;--hl:#7a5c00;--ok:#5fd694;--bad:#ff8a80}}
+:root[data-theme="dark"]{--bg:#0f1624;--card:#18223a;--ink:#e8eef9;--mute:#9db0cf;--line:#2b3957;--s:#4fd0d9;--v:#ffa45c;--o:#b79cff;--hl:#7a5c00;--ok:#5fd694;--bad:#ff8a80}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.7 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:760px;margin:0 auto;padding:10px 20px;display:flex;gap:8px;align-items:center;overflow-x:auto}
+.bar strong{font-weight:800;margin-right:auto;white-space:nowrap}
+.tab{font:inherit;font-size:14px;font-weight:500;border:1px solid var(--line);background:transparent;color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.tab[aria-current="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+:focus-visible{outline:3px solid var(--s);outline-offset:2px}
+main{max-width:760px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:clamp(28px,6vw,40px);line-height:1.2;margin:0 0 8px;font-weight:800}
+h2{font-size:22px;margin:28px 0 8px}
+p{margin:0 0 14px;max-width:68ch}
+.lead{color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+.formula{font-weight:700;font-size:18px}
+.S{color:var(--s)}.V{color:var(--v)}.O{color:var(--o)}
+mark{background:var(--hl);color:inherit;padding:0 3px;border-radius:3px}
+.ex{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:560px){.ex{grid-template-columns:1fr}}
+.ex .card{margin:0}
+.ex small{display:block;color:var(--mute);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0;min-height:64px}
+.chip{border:2px solid;border-radius:10px;padding:8px 14px;font-weight:700;background:var(--card)}
+.chip small{display:block;font-size:12px;font-weight:500;color:var(--mute)}
+.chip.S{border-color:var(--s)}.chip.V{border-color:var(--v)}.chip.O{border-color:var(--o)}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.btn{font:inherit;font-weight:700;border:0;background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:10px;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);font-weight:500}
+.btn.alt[aria-pressed="true"]{border-color:var(--ink);font-weight:700}
+.steps{margin:0;padding-left:22px}
+.steps li{margin-bottom:6px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:700;color:var(--mute);font-size:14px}
+.opt{display:block;width:100%;text-align:left;font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,var(--card))}
+.opt.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 15%,var(--card))}
+.fb{min-height:1.7em;color:var(--mute);font-size:15px}
+.prog{height:6px;background:var(--line);border-radius:4px;overflow:hidden;margin-bottom:14px}
+.prog i{display:block;height:100%;width:0;background:var(--s);transition:width .3s}
+.nav{display:flex;justify-content:space-between;margin-top:32px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.dots{display:flex;gap:6px;margin-top:10px}.dot{width:28px;height:6px;border-radius:3px;background:var(--line);transition:background .4s}.dot.on{background:var(--s)}
+.chip .tx{display:block}.chip{background:var(--card)}
+#ftxt{font-size:19px;margin-top:6px}
+.conv{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.arr{display:inline-block;animation:slide 1.4s ease-in-out infinite}
+.be{background:var(--hl);border-radius:4px;padding:0 4px;animation:pulse 2s ease-in-out infinite}
+.fm{display:block;font-weight:700;font-size:14px;color:var(--mute)}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes rowin{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@keyframes slide{0%,100%{transform:translateX(0)}50%{transform:translateX(8px)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 transparent}50%{box-shadow:0 0 0 4px var(--hl)}}
+#app>h1{animation:rise .4s both}tbody tr{animation:rowin .5s both}
+@media(prefers-reduced-motion:reduce){*,*::before{animation-duration:.001ms!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body>
+<header><nav class="bar" id="tabs"><strong>Bị động</strong></nav></header>
+<main id="app"></main>
+<script>
+var chapters=["Khái niệm","Cách chuyển","Công thức","Mở rộng","Lỗi & V3","Trắc nghiệm","Viết câu"];
+var cur=0;
+var demos=[
+{a:["Tom","wrote","a letter"],p:["A letter","was written","by Tom"],t:"Quá khứ đơn"},
+{a:["The chef","cooks","the meal"],p:["The meal","is cooked","by the chef"],t:"Hiện tại đơn"},
+{a:["They","are building","a bridge"],p:["A bridge","is being built","by them"],t:"Hiện tại tiếp diễn"},
+{a:["She","has finished","the report"],p:["The report","has been finished","by her"],t:"Hiện tại hoàn thành"},
+{a:["We","will hold","the meeting"],p:["The meeting","will be held","by us"],t:"Tương lai đơn"}
+];
+var dIdx=0;
+var qs=[
+{q:"Chọn câu bị động đúng: “They built this house in 1990.”",o:["This house built in 1990.","This house was built in 1990.","This house is built in 1990.","This house has built in 1990."],a:1,e:"Quá khứ đơn → was/were + V3: was built."},
+{q:"“The chef cooks the meal.” → bị động là:",o:["The meal is cooked by the chef.","The meal was cooked by the chef.","The meal cooks by the chef.","The meal is cook by the chef."],a:0,e:"Hiện tại đơn → am/is/are + V3."},
+{q:"“She is writing a letter.” → bị động là:",o:["A letter is written by her.","A letter is being written by her.","A letter was being written by her.","A letter has been written by her."],a:1,e:"Hiện tại tiếp diễn → is/are + being + V3."},
+{q:"“They have finished the work.” → bị động là:",o:["The work has been finished.","The work have been finished.","The work is finished being.","The work was finish."],a:0,e:"Hiện tại hoàn thành → has/have + been + V3. Chủ ngữ “work” số ít nên dùng has."},
+{q:"“He will send the email.” → bị động là:",o:["The email will send.","The email will be sent.","The email is sent.","The email will been sent."],a:1,e:"Tương lai đơn → will + be + V3."},
+{q:"Câu nào KHÔNG thể chuyển sang bị động?",o:["She opened the door.","The sun rises early.","They painted the wall.","We need more time."],a:1,e:"“Rise” là nội động từ, không có tân ngữ nên không có bị động."},
+{q:"Khi nào có thể bỏ “by + người làm”?",o:["Khi người làm không biết hoặc không quan trọng","Luôn luôn phải bỏ","Khi câu ở thì quá khứ","Không bao giờ được bỏ"],a:0,e:"Ví dụ: My bike was stolen. (Không cần nói ai lấy.)"},
+{q:"“Someone stole my phone.” → bị động tự nhiên nhất:",o:["My phone was stolen by someone.","My phone was stolen.","My phone stole.","My phone is stealing."],a:1,e:"“Someone” không mang thông tin, nên bỏ “by someone” cho tự nhiên."}
+];
+var qi=0,score=0,answered=false,done=false;
+
+function esc(s){return s.replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c]})}
+function ch1(){return '<h1>Câu chủ động và bị động</h1><p class="lead">Một ý, hai cách nói. Khác nhau ở chỗ bạn muốn nhấn mạnh ai hoặc cái gì.</p>'+
+'<h2>Câu chủ động (Active voice)</h2><p>Chủ ngữ là người hoặc vật <mark>thực hiện</mark> hành động.</p><div class="card formula"><span class="S">S</span> + <span class="V">V</span> + <span class="O">O</span></div>'+
+'<h2>Câu bị động (Passive voice)</h2><p>Chủ ngữ là người hoặc vật <mark>chịu tác động</mark> của hành động.</p><div class="card formula"><span class="O">O</span> + be + <span class="V">V3/ed</span> + (by <span class="S">S</span>)</div>'+
+'<h2>So sánh</h2><div class="ex"><div class="card"><b>Chủ động</b><br>The cat eats the fish.<small>Con mèo ăn con cá.</small></div><div class="card"><b>Bị động</b><br>The fish is eaten by the cat.<small>Con cá bị/được con mèo ăn.</small></div></div>'+
+'<h2>Công thức chuyển</h2><div class="card formula conv"><span><span class="S">S</span> + <span class="V">V</span> + <span class="O">O</span></span><b class="arr">⇒</b><span><span class="O">O</span> + <span class="be">be</span> + <span class="V">V3</span> + by <span class="S">S</span></span></div><p>“be” đổi theo thì của câu gốc (xem chương “Các thì”).</p><h2>Khi nào dùng bị động?</h2><p>Khi không biết hoặc không cần nói ai làm: <i>My bike was stolen.</i> Hoặc khi muốn nhấn mạnh đối tượng chịu tác động.</p>'+
+'<div class="card"><b>Lưu ý:</b> chỉ ngoại động từ (có tân ngữ) mới chuyển được sang bị động. Các động từ như <i>sleep, arrive, go</i> không có bị động.</div>'}
+var dState=0,dTimer=null;
+function c(k){return '<span class="'+k+'">'+k+'</span>'}
+function dTexts(d,s){var a=d.a,p=d.p;if(s===0)return[["S",a[0]],["V",a[1]],["O",a[2]]];if(s===1)return[["O",a[2]],["V",a[1]],["S",a[0]]];if(s===2)return[["O",p[0]],["V",p[1]],["S",a[0]]];return[["O",p[0]],["V",p[1]],["S",p[2]]]}
+function dLab(k,s){if(k==="S")return s?"tác nhân (người làm)":"chủ ngữ";if(k==="V")return s<2?"động từ":"be + V3";return s?"chủ ngữ mới":"tân ngữ"}
+function dFormula(s){return[c("S")+" + "+c("V")+" + "+c("O"),c("O")+" + "+c("V")+" + "+c("S"),c("O")+" + <span class=\"V\">be + V3</span> + "+c("S"),c("O")+" + <span class=\"V\">be + V3</span> + by "+c("S")][s]}
+function dStepTxt(d,s){return["Câu chủ động gốc. Thì: "+d.t+".","Bước 1: đưa tân ngữ lên đầu câu, nó trở thành chủ ngữ mới.","Bước 2: đổi động từ thành “be + V3”, chia “be” theo thì ("+d.t+").","Bước 3: chủ ngữ cũ xuống cuối câu và thêm “by”. Hoàn thành!"][s]}
+function dDots(s){var h="";for(var i=0;i<4;i++)h+='<span class="dot'+(i<=s?" on":"")+'"></span>';return h}
+function dBtn(s){return s>=3?"Chạy lại từ đầu":"Bước tiếp"}
+function ch2(){var d=demos[dIdx],tx=dTexts(d,dState);
+var btns=demos.map(function(x,i){return '<button class="btn alt" data-d="'+i+'" aria-pressed="'+(i===dIdx)+'">'+(i+1)+'. '+x.t+'</button>'}).join("");
+return '<h1>Cách chuyển sang bị động</h1><p class="lead">Chọn một câu, rồi bấm “Bước tiếp” hoặc “Tự chạy” để xem từng bước.</p><div class="row" id="dsel">'+btns+'</div><div class="card"><div class="chips" id="chips">'+
+tx.map(function(x){return '<div class="chip '+x[0]+'" data-k="'+x[0]+'"><span class="tx">'+esc(x[1])+'</span><small>'+dLab(x[0],dState)+'</small></div>'}).join("")+
+'</div><div class="formula" id="ftxt">'+dFormula(dState)+'</div><p id="stxt" style="margin:10px 0 0">'+dStepTxt(d,dState)+'</p><div class="dots" id="dots">'+dDots(dState)+'</div></div><div class="row"><button class="btn" id="dnext">'+dBtn(dState)+'</button><button class="btn alt" id="dplay">Tự chạy</button><button class="btn alt" id="dreset">Làm lại</button></div>'}
+function ch3(){var r=[["Hiện tại đơn","S + V(s/es)","O + am/is/are + V3","She writes a letter.","A letter <b class=\"be\">is written</b>."],["Quá khứ đơn","S + V2/ed","O + was/were + V3","She wrote a letter.","A letter <b class=\"be\">was written</b>."],["Hiện tại tiếp diễn","S + am/is/are + V-ing","O + am/is/are + <b>being</b> + V3","She is writing a letter.","A letter <b class=\"be\">is being written</b>."],["Hiện tại hoàn thành","S + has/have + V3","O + has/have + <b>been</b> + V3","She has written a letter.","A letter <b class=\"be\">has been written</b>."],["Quá khứ tiếp diễn","S + was/were + V-ing","O + was/were + <b>being</b> + V3","She was writing a letter.","A letter <b class=\"be\">was being written</b>."],["Quá khứ hoàn thành","S + had + V3","O + had + <b>been</b> + V3","She had written a letter.","A letter <b class=\"be\">had been written</b>."],["Tương lai đơn","S + will + V","O + will + <b>be</b> + V3","She will write a letter.","A letter <b class=\"be\">will be written</b>."],["Tương lai gần","S + am/is/are going to + V","O + am/is/are going to + <b>be</b> + V3","She is going to write a letter.","A letter <b class=\"be\">is going to be written</b>."],["Tương lai hoàn thành","S + will have + V3","O + will have + <b>been</b> + V3","She will have written a letter.","A letter <b class=\"be\">will have been written</b>."],["Động từ khuyết thiếu","S + can/must... + V","O + can/must... + <b>be</b> + V3","She can write a letter.","A letter <b class=\"be\">can be written</b>."]];
+return '<h1>Công thức từng thì</h1><p class="lead">Quy tắc nhớ nhanh: giữ nguyên thì, thêm “be” đúng dạng, động từ chính đổi thành V3.</p><div class="card tw"><table><thead><tr><th>Thì</th><th>Công thức</th><th>Ví dụ</th></tr></thead><tbody>'+
+r.map(function(x,i){return '<tr style="animation-delay:'+(i*120)+'ms"><td><b>'+x[0]+'</b></td><td><span class="fm">Chủ động</span>'+x[1]+'<span class="fm" style="margin-top:6px">Bị động</span>'+x[2]+'</td><td>'+x[3]+'<br>⇒ '+x[4]+'</td></tr>'}).join("")+'</tbody></table></div>'}
+function ch4(){if(done){return '<h1>Kết quả</h1><div class="card"><p class="formula" style="margin:0">Bạn đúng '+score+'/'+qs.length+' câu.</p><p style="margin:8px 0 0">'+(score>=qs.length*0.75?"Rất tốt! Bạn đã nắm vững phần này.":"Hãy xem lại chương “Công thức” rồi làm lại nhé.")+'</p></div><div class="row"><button class="btn" id="redo">Làm lại</button></div>'}
+var q=qs[qi];return '<h1>Trắc nghiệm</h1><div class="prog"><i style="width:'+(qi/qs.length*100)+'%"></i></div><p class="lead">Câu '+(qi+1)+'/'+qs.length+'</p><p><b>'+esc(q.q)+'</b></p><div id="opts">'+
+q.o.map(function(o,i){return '<button class="opt" data-o="'+i+'">'+esc(o)+'</button>'}).join("")+'</div><p class="fb" id="fb" aria-live="polite"></p><div class="row"><button class="btn" id="next" hidden>'+(qi===qs.length-1?"Xem kết quả":"Câu tiếp")+'</button></div>'}
+
+function render(){var f=[ch1,ch2,ch3,chExt,chErr,ch4,chWr][cur];document.getElementById("app").innerHTML=f()+
+nav();
+document.querySelectorAll("#tabs .tab").forEach(function(t,i){t.setAttribute("aria-current",i===cur)})}
+function go(n){clearInterval(dTimer);dTimer=null;cur=n;render();window.scrollTo(0,0)}
+function dStep(ns){var box=document.getElementById("chips"),els=[].slice.call(box.children),before={},old={};
+els.forEach(function(e){before[e.dataset.k]=e.getBoundingClientRect();old[e.dataset.k]=e.querySelector(".tx").textContent});
+dState=ns;var d=demos[dIdx],tx=dTexts(d,ns),fast=matchMedia("(prefers-reduced-motion:reduce)").matches;
+tx.forEach(function(x){var e=box.querySelector('[data-k="'+x[0]+'"]');box.appendChild(e);e.querySelector(".tx").textContent=x[1];e.querySelector("small").textContent=dLab(x[0],ns)});
+if(!fast)[].slice.call(box.children).forEach(function(e){var k=e.dataset.k,a=before[k],b=e.getBoundingClientRect();
+e.animate([{transform:"translate("+(a.left-b.left)+"px,"+(a.top-b.top)+"px)"},{transform:"none"}],{duration:600,easing:"ease-in-out"});
+if(e.querySelector(".tx").textContent!==old[k])e.animate([{boxShadow:"0 0 0 0 var(--hl)",transform:"scale(1)"},{boxShadow:"0 0 0 8px var(--hl)",transform:"scale(1.06)",offset:.5},{boxShadow:"0 0 0 0 var(--hl)",transform:"scale(1)"}],{duration:900,delay:500})});
+document.getElementById("ftxt").innerHTML=dFormula(ns);document.getElementById("stxt").textContent=dStepTxt(d,ns);
+document.getElementById("dots").innerHTML=dDots(ns);document.getElementById("dnext").textContent=dBtn(ns)}
+function dPlay(){var b=document.getElementById("dplay");if(dTimer){clearInterval(dTimer);dTimer=null;b.textContent="Tự chạy";return}
+dStep(0);b.textContent="Dừng";dTimer=setInterval(function(){if(dState>=3){clearInterval(dTimer);dTimer=null;b.textContent="Tự chạy";return}dStep(dState+1)},2200)}
+var tb=document.getElementById("tabs");
+chapters.forEach(function(c,i){var b=document.createElement("button");b.className="tab";b.textContent=c;b.onclick=function(){go(i)};tb.appendChild(b)});
+document.addEventListener("click",function(e){var t=e.target.closest("button");if(!t)return;
+if(t.dataset.go){go(cur+Number(t.dataset.go))}
+else if(t.dataset.d!==undefined){clearInterval(dTimer);dTimer=null;dIdx=Number(t.dataset.d);dState=0;render()}
+else if(t.id==="dnext"){dStep(dState>=3?0:dState+1)}else if(t.id==="dplay"){dPlay()}else if(t.id==="dreset"){clearInterval(dTimer);dTimer=null;document.getElementById("dplay").textContent="Tự chạy";dStep(0)}
+else if(t.dataset.o!==undefined&&!answered){answered=true;var q=qs[qi],i=Number(t.dataset.o),all=document.querySelectorAll(".opt");
+all[q.a].classList.add("ok");if(i===q.a){score++}else{t.classList.add("bad")}
+document.getElementById("fb").textContent=(i===q.a?"Đúng! ":"Chưa đúng. ")+q.e;document.getElementById("next").hidden=false}
+else if(t.id==="next"){answered=false;qi++;if(qi>=qs.length){done=true}render()}
+else if(t.id==="redo"){qi=0;score=0;done=false;answered=false;render()}});
+
+function nav(){var l=chapters.length-1;return '<div class="nav"><button class="btn alt" data-go="-1"'+(cur===0?' hidden':'')+'>Chương trước</button><button class="btn" data-go="1"'+(cur===l?' hidden':'')+'>Chương sau</button></div>'}
+function chExt(){var x=[
+["Câu phủ định",c("O")+" + be + <b>not</b> + V3","Nobody opened the door.","The door was not opened.",""],
+["Câu hỏi Yes/No","Be + "+c("O")+" + V3 ?","Did Tom write the letter?","Was the letter written by Tom?","Đảo “be” lên trước chủ ngữ mới."],
+["Câu hỏi Wh-","Wh- + be + "+c("O")+" + V3 ?","When did they build the bridge?","When was the bridge built?","Hỏi về người làm: Who wrote it? ⇒ By whom was it written?"],
+["Hai tân ngữ (give, send, show, tell)",c("O")+"1 / "+c("O")+"2 + be + V3","She gave me a book.","I was given a book. / A book was given to me.","Cả hai tân ngữ đều có thể làm chủ ngữ. Tân ngữ chỉ người hay được chọn hơn."],
+["Câu mệnh lệnh","Let + "+c("O")+" + be + V3","Open the door!","Let the door be opened.","Cũng gặp: The door should be opened."],
+["Nhờ người khác làm (have/get)","S + have/get + "+c("O")+" + V3","I had a barber cut my hair.","I had my hair cut.","Nghĩa: nhờ ai đó làm giúp, không tự làm."],
+["Động từ tường thuật (say, think, believe)","It + be + V3 + that + clause","People say that he is rich.","It is said that he is rich. / He is said to be rich.","Dùng nhiều trong văn viết và tin tức."]];
+return '<h1>Mở rộng</h1><p class="lead">Các dạng bị động thường gặp ngoài câu khẳng định.</p>'+x.map(function(r){return '<div class="card"><b>'+r[0]+'</b><div class="formula">'+r[1]+'</div><p style="margin:8px 0 0">'+r[2]+'<br>⇒ <b>'+r[3]+'</b></p>'+(r[4]?'<p class="lead" style="margin:6px 0 0;font-size:15px">'+r[4]+'</p>':'')+'</div>'}).join("")}
+function chErr(){var e=[["The cake made by Mom.","The cake was made by Mom.","Thiếu “be”."],["The window was break.","The window was broken.","Phải dùng V3, không dùng V1."],["The books was sold.","The books were sold.","“be” chia theo chủ ngữ mới."],["The accident was happened.","The accident happened.","Nội động từ không có bị động."],["My bag was stolen by someone.","My bag was stolen.","Bỏ “by” khi người làm không quan trọng."],["The report is written yesterday.","The report was written yesterday.","Thì của “be” phải khớp mốc thời gian."]];
+var v=[["write","wrote","written","viết"],["build","built","built","xây"],["make","made","made","làm"],["do","did","done","làm"],["give","gave","given","cho"],["take","took","taken","lấy"],["see","saw","seen","thấy"],["break","broke","broken","làm vỡ"],["steal","stole","stolen","trộm"],["teach","taught","taught","dạy"],["send","sent","sent","gửi"],["buy","bought","bought","mua"],["eat","ate","eaten","ăn"],["choose","chose","chosen","chọn"],["sell","sold","sold","bán"],["find","found","found","tìm thấy"],["hold","held","held","tổ chức"],["speak","spoke","spoken","nói"]];
+return '<h1>Lỗi thường gặp và V3</h1><p class="lead">Sáu lỗi người học hay mắc nhất.</p>'+e.map(function(r){return '<div class="card"><p style="margin:0;color:var(--bad)">✗ '+r[0]+'</p><p style="margin:0;color:var(--ok)">✓ <b>'+r[1]+'</b></p><p class="lead" style="margin:4px 0 0;font-size:15px">'+r[2]+'</p></div>'}).join("")+
+'<h2>Động từ bất quy tắc hay gặp</h2><div class="card tw"><table><thead><tr><th>V1</th><th>V2</th><th>V3</th><th>Nghĩa</th></tr></thead><tbody>'+v.map(function(r){return '<tr><td>'+r[0]+'</td><td>'+r[1]+'</td><td><b>'+r[2]+'</b></td><td>'+r[3]+'</td></tr>'}).join("")+'</tbody></table></div>'}
+var wq=[["They clean the room every day.",["the room is cleaned every day","the room is cleaned by them every day"]],["She wrote a poem.",["a poem was written by her","a poem was written"]],["They are repairing the car.",["the car is being repaired","the car is being repaired by them"]],["He has not finished the work.",["the work has not been finished","the work has not been finished by him"]],["Will they invite you?",["will you be invited","will you be invited by them"]],["People say he is rich.",["he is said to be rich","it is said that he is rich"]]];
+function norm(t){return t.toLowerCase().replace(/[.,?!’']/g,"").replace(/\s+/g," ").trim()}
+function chWr(){return '<h1>Viết câu bị động</h1><p class="lead">Gõ câu bị động cho mỗi câu chủ động, rồi bấm “Kiểm tra”. Không cần viết hoa hay dấu câu.</p>'+wq.map(function(q,i){return '<div class="card"><p style="margin:0 0 8px"><b>'+(i+1)+'.</b> '+esc(q[0])+'</p><div class="row" style="margin:0"><input id="w'+i+'" type="text" autocomplete="off" autocapitalize="none" spellcheck="false" style="flex:1;min-width:200px;font:inherit;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)"><button class="btn" data-w="'+i+'">Kiểm tra</button><button class="btn alt" data-show="'+i+'">Xem đáp án</button></div><p class="fb" id="wr'+i+'" aria-live="polite" style="margin:8px 0 0"></p></div>'}).join("")}
+document.addEventListener("click",function(e){var t=e.target.closest("button");if(!t)return;
+if(t.dataset.w!==undefined){var i=Number(t.dataset.w),ok=wq[i][1].indexOf(norm(document.getElementById("w"+i).value))>-1,r=document.getElementById("wr"+i);r.style.color=ok?"var(--ok)":"var(--bad)";r.textContent=ok?"Đúng rồi!":"Chưa đúng. Kiểm tra lại “be”, dạng V3 và thì của câu."}
+if(t.dataset.show!==undefined){var j=Number(t.dataset.show),r2=document.getElementById("wr"+j);r2.style.color="var(--mute)";r2.textContent="Đáp án: "+wq[j][1][0]}});
+qs.push(
+{q:"Chọn câu phủ định bị động đúng: “Nobody opened the door.”",o:["The door was not opened.","The door not was opened.","The door did not opened.","The door was no open."],a:0,e:"Phủ định: be + not + V3."},
+{q:"“Did Tom write the letter?” → bị động là:",o:["Was the letter written by Tom?","Did the letter written by Tom?","Was written the letter by Tom?","Is the letter write by Tom?"],a:0,e:"Câu hỏi Yes/No: Be + chủ ngữ mới + V3?"},
+{q:"“She gave me a book.” → bị động tự nhiên là:",o:["I was given a book.","I gave a book.","I was give a book.","I am gived a book."],a:0,e:"Give có hai tân ngữ; lấy tân ngữ chỉ người làm chủ ngữ là cách phổ biến."},
+{q:"Điền vào chỗ trống: “I ___ my car repaired yesterday.”",o:["had","have repaired","am","was"],a:0,e:"have/get + vật + V3 nghĩa là nhờ người khác làm. “Yesterday” nên dùng had."},
+{q:"“People say he is rich.” → bị động là:",o:["He is said to be rich.","He says to be rich.","He is say rich.","He was said be rich."],a:0,e:"Động từ tường thuật: S + be + V3 + to-V."},
+{q:"“They are going to build a school.” → bị động là:",o:["A school is going to be built.","A school is going to build.","A school will be building.","A school is going to been built."],a:0,e:"Tương lai gần: am/is/are going to + be + V3."},
+{q:"Điền vào chỗ trống: “The window ___ by the boy yesterday.”",o:["was broken","broke","is broke","was break"],a:0,e:"Quá khứ đơn bị động: was/were + V3. Break ⇒ broken."},
+{q:"“They had finished the work.” → bị động là:",o:["The work had been finished.","The work was finished had.","The work had finished.","The work has been finished."],a:0,e:"Quá khứ hoàn thành: had + been + V3."});
+render();
+</script>
+</body>
+</html>
